@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_sport"
+        android:icon="@drawable/ic_directions_bike_black_36dp"
+        android:title="@string/sport" />
+
+    <item
+        android:id="@+id/navigation_environment"
+        android:icon="@drawable/planting"
+        android:title="@string/environment" />
+    <item
+        android:id="@+id/navigation_politics"
+        android:icon="@drawable/politics"
+        android:title="@string/politics" />
+    <item
+        android:id="@+id/navigation_economics"
+        android:icon="@drawable/money_bag"
+        android:title="@string/economics" />
+
+
+</menu>

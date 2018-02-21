@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">News AppStage 1</string>
+    <string name="politics">Politics</string>
+    <string name="environment">Environment</string>
+    <string name="sport">Sport</string>
+    <string name="economics">Economics</string>
+</resources>

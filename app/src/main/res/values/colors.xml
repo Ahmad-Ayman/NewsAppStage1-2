@@ -6,4 +6,6 @@
     <color name="purple3">#504071</color>
     <color name="backgroundforlist">#B2DFDB</color>
     <color name="colorofprice">#757575</color>
+    <color name="listcolor">#EEEEEE</color>
+    <color name="textcolor">#525252</color>
 </resources>

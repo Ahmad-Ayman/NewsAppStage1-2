@@ -9,26 +9,22 @@ public class NewsModel {
     private String mWebPublicationDate;
     private String mWebTitle;
     private String mWebUrl;
-    private String mAuthorWebTitle;
-    private String mAuthorWebUrl;
-    private String mAuthorBylineImageUrl;
+    private String mAuthor;
+
     public NewsModel(
             String sectionName,
             String webPublicationDate,
             String webTitle,
             String webUrl,
-            String authorWebTitle,
-            String authorWebUrl,
-            String authorBylineImageUrl){
+            String author) {
 
-            mSectionName=sectionName;
-            mWebPublicationDate=webPublicationDate;
-            mWebTitle=webTitle;
-            mWebUrl=webUrl;
-            mAuthorWebTitle=authorWebTitle;
-            mAuthorWebUrl=authorWebUrl;
-            mAuthorBylineImageUrl=authorBylineImageUrl;
-            }
+        mSectionName = sectionName;
+        mWebPublicationDate = webPublicationDate;
+        mWebTitle = webTitle;
+        mWebUrl = webUrl;
+        mAuthor = author;
+
+    }
 
     public String getmSectionName() {
         return mSectionName;
@@ -46,15 +42,18 @@ public class NewsModel {
         return mWebUrl;
     }
 
-    public String getmAuthorWebTitle() {
-        return mAuthorWebTitle;
+    public String getmAuthor() {
+        return mAuthor;
     }
 
-    public String getmAuthorWebUrl() {
-        return mAuthorWebUrl;
-    }
-
-    public String getmAuthorBylineImageUrl() {
-        return mAuthorBylineImageUrl;
+    @Override
+    public String toString() {
+        return "News{" +
+                "title='" + mWebTitle + '\'' +
+                ", author='" + mAuthor + '\'' +
+                ", url='" + mWebUrl + '\'' +
+                ", date='" + mWebPublicationDate + '\'' +
+                ", section='" + mSectionName + '\'' +
+                '}';
     }
 }

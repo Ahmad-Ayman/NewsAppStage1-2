@@ -10,5 +10,6 @@
     <dimen name="indicatordp">42dp</dimen>
     <dimen name="twentysp">20sp</dimen>
     <dimen name="fifteensp">15sp</dimen>
+    <dimen name="ninghteensp">19sp</dimen>
 
 </resources>

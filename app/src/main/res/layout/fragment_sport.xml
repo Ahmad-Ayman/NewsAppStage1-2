@@ -10,22 +10,24 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-
-        <android.support.v7.widget.RecyclerView
-            android:id="@+id/rv_sports"
+        <ListView
+            android:id="@+id/listitem"
+            android:orientation="vertical"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"/>
+            android:layout_height="match_parent"
+            android:background="@color/listcolor"
+            android:drawSelectorOnTop="true"/>
 
     </android.support.v4.widget.SwipeRefreshLayout>
     <TextView
-        android:id="@+id/errormsg"
+        android:id="@+id/emptyElement"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:padding="@dimen/meddp"
         android:layout_gravity="center"
-        android:text="@string/errormsg"
-        android:textSize="@dimen/twentysp"
-        android:visibility="invisible" />
+        tools:text="@string/placeholder"
+        android:textColor="@color/textcolor"
+        android:textSize="@dimen/ninghteensp"
+        android:visibility="gone" />
 
     <ProgressBar
         android:id="@+id/pb_loading_indicator"

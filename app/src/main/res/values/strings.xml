@@ -3,10 +3,21 @@
     <string name="politics">Politics</string>
     <string name="environment">Environment</string>
     <string name="sport">Sport</string>
-    <string name="economics">Economics</string>
+    <string name="technology">Technology</string>
     <string name="placeholder">Place Holder</string>
     <string name="errormsg">Error Loading data</string>
-
+    <string name="logmsgLoader">mUrl is null</string>
+    <string name="titlefortechfrag">Tech News in Egypt</string>
+    <string name="titleforsportfrag">Sports News in Egypt</string>
+    <string name="titleforenvfrag">Environment News in Egypt</string>
+    <string name="titleforpolyfrag">Politics News in Egypt</string>
+    <string name="noInternet">No Internet Connection found.</string>
+    <string name="technologyQuery">technology/technology</string>
+    <string name="SportsQuery">sport/sport</string>
+    <string name="EnvironmentQuery">environment/environment</string>
+    <string name="PoliticsQuery">politics/politics</string>
+    <string name="noData">No Data Found!</string>
+    <string name="errorParsing">Error parsing JSON response</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

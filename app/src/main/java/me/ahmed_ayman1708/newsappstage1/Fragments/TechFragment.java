@@ -2,7 +2,6 @@ package me.ahmed_ayman1708.newsappstage1.Fragments;
 
 
 import android.app.LoaderManager;
-import android.app.LoaderManager.LoaderCallbacks;
 import android.content.Context;
 import android.content.Intent;
 import android.content.Loader;
@@ -28,10 +27,10 @@ import me.ahmed_ayman1708.newsappstage1.BackgroundThread.NewsLoader;
 import me.ahmed_ayman1708.newsappstage1.Models.NewsModel;
 import me.ahmed_ayman1708.newsappstage1.R;
 
-public class PoliticsFragment extends Fragment implements LoaderCallbacks<List<NewsModel>> {
+public class TechFragment extends Fragment implements LoaderManager.LoaderCallbacks<List<NewsModel>> {
 
-    private static final String TAG = PoliticsFragment.class.getSimpleName();
-    private static final int Politics_LOADER_ID = 3;
+    private static final String TAG = TechFragment.class.getSimpleName();
+    private static final int TECH_LOADER_ID = 4;
     private ProgressBar mLoadingIndicator;
     private TextView mErrorMsgDisplay;
     ConnectivityManager cm;
@@ -51,14 +50,14 @@ public class PoliticsFragment extends Fragment implements LoaderCallbacks<List<N
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-
-        return inflater.inflate(R.layout.fragment_politics, container, false);
+        // Inflate the layout for this fragment
+        return inflater.inflate(R.layout.fragment_tech, container, false);
     }
 
     @Override
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        getActivity().setTitle(getResources().getString(R.string.titleforpolyfrag));
+        getActivity().setTitle(getResources().getString(R.string.titlefortechfrag));
         mLoadingIndicator = view.findViewById(R.id.pb_loading_indicator);
         mErrorMsgDisplay = view.findViewById(R.id.emptyElement);
         ListView newsListView = view.findViewById(R.id.listitem);
@@ -83,8 +82,7 @@ public class PoliticsFragment extends Fragment implements LoaderCallbacks<List<N
         if (isConnected) {
             loaderManager = getActivity().getLoaderManager();
 
-
-            loaderManager.initLoader(Politics_LOADER_ID, null, this);
+            loaderManager.initLoader(TECH_LOADER_ID, null, this);
         } else {
             mAdapter.clear();
             mErrorMsgDisplay.setText(getResources().getString(R.string.noInternet));
@@ -99,7 +97,7 @@ public class PoliticsFragment extends Fragment implements LoaderCallbacks<List<N
     public Loader<List<NewsModel>> onCreateLoader(int i, Bundle bundle) {
         Uri baseUri = Uri.parse(NEWS_LINK).buildUpon()
                 .appendQueryParameter(QUERY_PARAM_TOPIC, QUERY_PARAM_TOPIC_SELECTION)
-                .appendQueryParameter(QUERY_PARAM_TAG, getResources().getString(R.string.PoliticsQuery))
+                .appendQueryParameter(QUERY_PARAM_TAG, getResources().getString(R.string.technologyQuery))
                 .appendQueryParameter(QUERY_PARAM_SHOW_TAGS, QUERY_PARAM_SHOW_TAGS_SELECTION)
                 .appendQueryParameter(QUERY_PARAM_API_KEY, API_KEY)
                 .build();

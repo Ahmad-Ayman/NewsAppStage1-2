@@ -15,9 +15,9 @@
         android:icon="@drawable/politics"
         android:title="@string/politics" />
     <item
-        android:id="@+id/navigation_economics"
-        android:icon="@drawable/money_bag"
-        android:title="@string/economics" />
+        android:id="@+id/navigation_technology"
+        android:icon="@drawable/ic_laptop_black_36dp"
+        android:title="@string/technology" />
 
 
 </menu>

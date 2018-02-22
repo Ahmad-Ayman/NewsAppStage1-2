@@ -16,7 +16,7 @@ import me.ahmed_ayman1708.newsappstage1.Models.NewsModel;
 
 public class JsonParser {
 
-    public static ArrayList<NewsModel> getNewsStringsFromJson(Context context, String NewsJsonStr)
+    public static ArrayList<NewsModel> getNewsStringsFromJson( String NewsJsonStr)
             throws JSONException {
         ArrayList<NewsModel> NewsListingArray = new ArrayList<>();
         final String rootJsonObj="response";

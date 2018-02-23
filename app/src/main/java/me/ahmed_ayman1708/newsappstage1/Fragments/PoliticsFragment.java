@@ -32,7 +32,6 @@ import me.ahmed_ayman1708.newsappstage1.R;
 
 public class PoliticsFragment extends Fragment implements LoaderCallbacks<List<NewsModel>> {
 
-    private static final String TAG = PoliticsFragment.class.getSimpleName();
     private static final int Politics_LOADER_ID = 3;
 
     private TextView mErrorMsgDisplay;
@@ -42,7 +41,6 @@ public class PoliticsFragment extends Fragment implements LoaderCallbacks<List<N
     private static final String NEWS_LINK = "http://content.guardianapis.com/search";
     private final static String QUERY_PARAM_API_KEY = "api-key";
     private final static String QUERY_PARAM_TOPIC = "q";
-    private final static String QUERY_PARAM_TOPIC_SELECTION = "egypt";
     private final static String QUERY_PARAM_TAG = "tag";
     private final static String QUERY_PARAM_SHOW_TAGS = "show-tags";
     private final static String QUERY_PARAM_SHOW_TAGS_SELECTION = "contributor";

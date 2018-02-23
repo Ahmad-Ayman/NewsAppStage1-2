@@ -31,7 +31,6 @@ import me.ahmed_ayman1708.newsappstage1.R;
 
 public class TechFragment extends Fragment implements LoaderManager.LoaderCallbacks<List<NewsModel>> {
 
-    private static final String TAG = TechFragment.class.getSimpleName();
     private static final int TECH_LOADER_ID = 4;
 
     private TextView mErrorMsgDisplay;
@@ -41,7 +40,6 @@ public class TechFragment extends Fragment implements LoaderManager.LoaderCallba
     private static final String NEWS_LINK = "http://content.guardianapis.com/search";
     private final static String QUERY_PARAM_API_KEY = "api-key";
     private final static String QUERY_PARAM_TOPIC = "q";
-    private final static String QUERY_PARAM_TOPIC_SELECTION = "egypt";
     private final static String QUERY_PARAM_TAG = "tag";
     private final static String QUERY_PARAM_SHOW_TAGS = "show-tags";
     private final static String QUERY_PARAM_SHOW_TAGS_SELECTION = "contributor";

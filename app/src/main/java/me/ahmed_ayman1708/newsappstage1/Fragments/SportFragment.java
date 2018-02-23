@@ -38,7 +38,7 @@ import me.ahmed_ayman1708.newsappstage1.R;
 import me.ahmed_ayman1708.newsappstage1.Utils.NetworkUtils;
 
 public class SportFragment extends Fragment implements LoaderCallbacks<List<NewsModel>> {
-    private static final String TAG = SportFragment.class.getSimpleName();
+    
     private static final int SPORTS_LOADER_ID = 1;
 
     private TextView mErrorMsgDisplay;
@@ -50,7 +50,6 @@ public class SportFragment extends Fragment implements LoaderCallbacks<List<News
     private static final String NEWS_LINK = "http://content.guardianapis.com/search";
     private final static String QUERY_PARAM_API_KEY = "api-key";
     private final static String QUERY_PARAM_TOPIC = "q";
-    private final static String QUERY_PARAM_TOPIC_SELECTION = "egypt";
     private final static String QUERY_PARAM_TAG = "tag";
     private final static String QUERY_PARAM_SHOW_TAGS = "show-tags";
     private final static String QUERY_PARAM_SHOW_TAGS_SELECTION = "contributor";

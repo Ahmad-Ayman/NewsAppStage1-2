@@ -22,6 +22,11 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        showData();
+
+    }
+
+    private void showData() {
         BottomNavigationView navigation = findViewById(R.id.navigation2);
         navigation.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
@@ -55,8 +60,8 @@ public class MainActivity extends AppCompatActivity {
         SportFragment sportFragment = new SportFragment();
         FragmentManager managerSport = getSupportFragmentManager();
         managerSport.beginTransaction().replace(R.id.articalsLayout, sportFragment).commit();
-
     }
+
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater inflater=getMenuInflater();
@@ -72,5 +77,11 @@ public class MainActivity extends AppCompatActivity {
             startActivity(i);
         }
         return super.onOptionsItemSelected(item);
+    }
+
+    @Override
+    protected void onRestart() {
+        super.onRestart();
+        showData();
     }
 }

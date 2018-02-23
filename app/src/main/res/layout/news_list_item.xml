@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundforlist"
+    android:orientation="horizontal">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/twodp"
+        android:layout_marginLeft="@dimen/tendp"
+        android:layout_marginRight="@dimen/tendp"
+        android:layout_marginTop="@dimen/tendp"
+        android:background="@drawable/border">
+
+        <TextView
+            android:id="@+id/tv_articleName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/twentydp"
+            android:gravity="center"
+            android:padding="@dimen/smalldp"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            tools:text="@string/placeholder"
+
+            />
+
+        <View
+            android:id="@+id/divder"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/onedp"
+            android:layout_below="@id/tv_articleName"
+            android:layout_gravity="center"
+            android:background="@android:color/darker_gray" />
+
+        <LinearLayout
+            android:id="@+id/LinearBelowDivider"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/divder">
+
+            <TextView
+                android:id="@+id/tv_section"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="@dimen/smalldp"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="@color/colorofprice"
+                android:textStyle="normal"
+                tools:text="@string/placeholder" />
+
+            <View
+                android:layout_width="@dimen/onedp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:background="@android:color/darker_gray"
+
+                />
+
+            <TextView
+                android:id="@+id/tv_publishDate"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="@dimen/smalldp"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="@color/colorofprice"
+                android:textStyle="normal"
+                tools:text="@string/placeholder" />
+
+
+        </LinearLayout>
+        <View
+            android:id="@+id/divder2"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/onedp"
+            android:layout_below="@id/LinearBelowDivider"
+            android:layout_gravity="center"
+            android:background="@android:color/darker_gray" />
+
+        <TextView
+            android:id="@+id/authortv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/smalldp"
+            android:gravity="center"
+            android:layout_below="@id/LinearBelowDivider"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@color/colorofprice"
+            tools:text="@string/placeholder" />
+    </RelativeLayout>
+</LinearLayout>

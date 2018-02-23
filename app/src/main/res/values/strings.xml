@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">News AppStage 1</string>
+    <string name="politics">Politics</string>
+    <string name="environment">Environment</string>
+    <string name="sport">Sport</string>
+    <string name="technology">Technology</string>
+    <string name="placeholder">Place Holder</string>
+    <string name="errormsg">Error Loading data</string>
+    <string name="logmsgLoader">mUrl is null</string>
+    <string name="titlefortechfrag">Tech News in&#160;</string>
+    <string name="titleforsportfrag">Sports News in&#160;</string>
+    <string name="titleforenvfrag">Environment News in &#160;</string>
+    <string name="titleforpolyfrag">Politics News in&#160;</string>
+    <string name="noInternet">No Internet Connection found.</string>
+    <string name="technologyQuery">technology/technology</string>
+    <string name="SportsQuery">sport/sport</string>
+    <string name="EnvironmentQuery">environment/environment</string>
+    <string name="PoliticsQuery">politics/politics</string>
+    <string name="noData">No Data Found!</string>
+    <string name="errorParsing">Error parsing JSON response</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_settings">Settings</string>
+
+    <string name="settings_menu_item">Settings</string>
+    <string name="settings_title">News App Settings</string>
+    <string name="prefTitle">Countries</string>
+    <string name="prefDefault">egypt</string>
+    <string name="prefKey">country_key</string>
+</resources>
